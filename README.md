@@ -1,3 +1,11 @@
+# Adding GPT-NeoX and Pythia support for GPTQ quantization/4bit inference and beyond.
+I have uploaded neox.py and neox2.py, my two different approaches to adding neox support;
+if anyone wishes to contribute to this project based off of GPTQ-for-LLaMA and assist,
+please do - Each script loads and goes past datasets, then I'm snagged on how to properly
+reference layers in NeoX. Any advice, code change PRs, suggestions would help a long way.
+
+Let's get GPT-NeoX and Pythia support for 4bit GPTQ!
+
 # GPTQ-for-LLaMa
 4 bits quantization of [LLaMa](https://arxiv.org/abs/2302.13971) using [GPTQ](https://arxiv.org/abs/2210.17323)
 
