@@ -3,6 +3,9 @@ I have uploaded neox.py and neox2.py, my two different approaches to adding neox
 if anyone wishes to contribute to this project based off of GPTQ-for-LLaMA and assist,
 please do - Each script loads and goes past datasets, then I'm snagged on how to properly
 reference layers in NeoX. Any advice, code change PRs, suggestions would help a long way.
+Also, all three AutoTokenizer.from_pretrained(model, use_fast=False) in datautils.py might need
+to be changed to AutoTokenizer.from_pretrained(model, use_fast=True), as NeoX only supports
+fast tokenization; not sure if it needs its own entry in datautils.py.
 
 Let's get GPT-NeoX and Pythia support for 4bit GPTQ!
 
